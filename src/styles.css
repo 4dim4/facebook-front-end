@@ -3,3 +3,41 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
+
+.navbar-default{
+    background-color: #3b5998;
+    color:white;
+    border-color:transparent;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+}
+
+.navbar-default .navbar-brand , .navbar-default .navbar-brand:hover  {
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+
+body{
+  background-color: #d8dfea;
+}
+
+.btn-default , .btn-default:hover {
+   background:linear-gradient(#6d84b4, #3b5998);
+   border-color: #3b5998;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+   color:white;
+}
+
+.border{
+  border-radius: 0;
+}
+
+.header-text{
+  text-align: center;
+}
+
+.grey-text {
+  color:darkgrey;
+}

@@ -1,0 +1,31 @@
+<div class="header-text">
+	<h3>Welcome to LatitudeFintech</h3>
+	<p class="grey-text">Connect with friends and the world around you</p>
+</div>
+<form (ngSubmit)="submitUser()">
+	<div class="form-group">
+
+		<input type="text" class="form-control" id="firstname" placeholder="First Name" [(ngModel)]="user.firstName" name="first"> 
+	</div>
+	<div class="form-group">
+
+		<input type="text" class="form-control" id="lastname" placeholder="Last Name" [(ngModel)]="user.lastName" name="last">
+	</div>
+	<div class="form-group">
+
+		<input type="email" class="form-control" id="email" placeholder="Your Email" [(ngModel)]="user.email" name="email"> 
+	</div>
+	<div class="form-group">
+
+		<input type="text" class="form-control" id="username" placeholder="Your Username" [(ngModel)]="user.userName" name="userName">
+	</div>
+	<div class="form-group">
+
+		<input type="password" class="form-control" id="pwd" placeholder="Your password" [(ngModel)]="user.password" name="password">
+	</div>
+	<div class="form-group">
+
+		<input type="password" class="form-control" id="re-pwd" placeholder="Re-enter password">
+	</div>
+	<button type="submit" class="btn btn-default btn-block">Sign Up for Latitude Fintech</button>
+</form>
