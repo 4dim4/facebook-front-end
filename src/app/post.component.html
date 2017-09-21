@@ -1,0 +1,25 @@
+<div class="panel panel-default">
+	<div class="panel-body post-panel-body">
+	<div class="post-description">
+		<p><strong style="color:#3b5998">{{firstName}}</strong></p>
+		<p>{{post.description}}</p>
+		<div class="likeComment">
+			<a (click)="toggleLike()" class="like"><span *ngIf="!isLike">Like</span><span *ngIf="isLike">Unlike</span></a> - <a class="like"
+				(click)="toggleComment()"> Comment</a>
+		</div>
+	</div>
+		<div *ngIf="isLike" class="well well-sm like-well"><span class="glyphicon glyphicon-thumbs-up"></span> You like this.</div>
+		
+		<comment *ngFor="let comment of comments" [comment]="comment" ></comment>
+		
+		<form (ngSubmit)="addComment()">
+			<div *ngIf="clickedComment" class = "col-md-12">
+			<div class="form-group">
+
+				<input [(ngModel)]="comment.body"  type="text" class="form-control input-form" name="comment" id="comment" placeholder="Write a comment...">
+			</div>
+			</div>
+		</form>
+	</div>
+
+</div>

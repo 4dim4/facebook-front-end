@@ -1,7 +1,13 @@
-h1 {
+h1  {
   color: #369;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
+}
+
+.dark-text {
+  color: #3b5998;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150%;
 }
 
 .navbar-default{
@@ -23,6 +29,10 @@ body{
   background-color: #d8dfea;
 }
 
+#body{
+  margin-top: 8%;
+}
+
 .btn-default , .btn-default:hover {
    background:linear-gradient(#6d84b4, #3b5998);
    border-color: #3b5998;
@@ -41,3 +51,72 @@ body{
 .grey-text {
   color:darkgrey;
 }
+
+textarea {
+    resize: none;
+}
+
+.panel-default {
+
+  
+ 
+}
+
+.post-button {
+  float :right;
+   box-shadow: 0 !important;
+}
+
+
+.like {
+  color: #6d84b4;
+
+}
+
+.like:hover{
+  cursor: pointer;
+}
+
+.like-well{
+  
+  padding: 3px; 
+}
+
+.glyphicon-thumbs-up{
+  color:#3b5998;
+}
+
+.likeComment{
+  padding-bottom: 5px;
+}
+
+.list-group-item{
+   background-color: #d8dfea;
+}
+
+.well{
+    background-color: #d8dfea;
+    margin-bottom: 1px;
+}
+
+.input-form{
+  margin-top: 10px;
+}
+
+.post-panel-body{
+      padding: 15px 2px 1px 2px;
+}
+
+.post-description{
+  margin-left: 13px;
+}
+
+.comment-reply{
+ 
+  margin-left: 9%;
+}
+
+.comment-reply-group-item:last-of-type hr{
+  display: none;
+}
+

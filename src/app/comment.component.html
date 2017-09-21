@@ -1,0 +1,23 @@
+<div class="well well-sm">
+	<p> <strong style="color:#3b5998">{{firstName}}</strong> {{comment.body}}</p>
+	<div class="likeComment">
+		<a (click)="toggleLike()" class="like"><span *ngIf="!isLike">Like</span><span *ngIf="isLike">Unlike</span></a><span class="like" *ngIf="isLike"> - <span class="glyphicon glyphicon-thumbs-up"></span> 1 person</span> - <a class="like" (click)="toggleReply()"> Reply</a>
+	</div>
+  <div >
+  <hr [style.display]="hasReplies">
+  </div>
+	<div class="comment-reply">
+    
+      <div *ngFor="let reply of replies" class="comment-reply-group-item">
+    <reply [reply]="reply"></reply>
+      </div>
+    
+    <form (ngSubmit)="addReply()">
+		<div class="form-group">
+
+			<input *ngIf="clickedReply" [(ngModel)]="reply.body" type="text" class="form-control input-form" name="reply" id="reply" placeholder="Write a reply...">
+		</div>
+    </form>
+	</div>
+
+</div>

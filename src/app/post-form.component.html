@@ -1,0 +1,16 @@
+<div class="col-md-6">
+<div class="panel panel-default">
+	<div class="panel-body">
+		<form id="postForm">
+		<div class="form-group" >
+			<label class="dark-text" for="description">What's on your mind ?</label>
+			<textarea form="postForm" class="form-control" rows="5" id="description" [(ngModel)]="post.description" name="description" ></textarea>
+		</div>
+        <button [disabled]="!post.description" type="submit" (click)="submitPost()" class="btn btn-default post-button">Post</button>
+		</form>
+	</div>
+</div>
+</div>
+<div class="col-md-6">
+	<post *ngFor="let post of posts"  [post]="post"></post>
+</div>

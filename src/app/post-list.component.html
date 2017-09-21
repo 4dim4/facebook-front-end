@@ -1,0 +1,7 @@
+<div class="panel panel-default" *ngFor="let post of posts">
+	<div class="panel-body">
+		<p><strong style="color:#3b5998">{{firstName}}</strong></p>
+		<p>{{post.description}}</p>
+		<a (click)="toggleLike()" class="like">{{like}}</a> - <a class="like"> Comment</a>
+	</div>
+</div>

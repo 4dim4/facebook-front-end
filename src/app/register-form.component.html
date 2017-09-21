@@ -1,3 +1,5 @@
+<div class="col-md-4 col-md-offset-4">
+
 <div class="header-text">
 	<h3>Welcome to LatitudeFintech</h3>
 	<p class="grey-text">Connect with friends and the world around you</p>
@@ -25,7 +27,11 @@
 	</div>
 	<div class="form-group">
 
-		<input type="password" class="form-control" id="re-pwd" placeholder="Re-enter password">
+		<input type="password" class="form-control" [(ngModel)]="repassword" name="re-pwd" id="re-pwd" placeholder="Re-enter password">
 	</div>
 	<button type="submit" class="btn btn-default btn-block">Sign Up for Latitude Fintech</button>
 </form>
+<div *ngIf="success" class="alert alert-success">
+  <strong>Success!</strong> User has been registered !
+</div>
+</div>
